@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/form_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/formBackground"
+    android:padding="32dp">
+
+    <LinearLayout
+        android:id="@+id/form_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Form Title -->
+        <TextView
+            android:id="@+id/form_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count Steel Project"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="24dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Your Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/bg_edittext_rounded"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_edittext_rounded"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Title -->
+        <EditText
+            android:id="@+id/input_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Title"
+            android:inputType="textCapWords"
+            android:background="@drawable/bg_edittext_rounded"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Item Name -->
+        <EditText
+            android:id="@+id/input_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Item Name"
+            android:inputType="textCapWords"
+            android:background="@drawable/bg_edittext_rounded"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Item Category -->
+        <EditText
+            android:id="@+id/input_item_category"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Item Category"
+            android:inputType="textCapWords"
+            android:background="@drawable/bg_edittext_rounded"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Description (Multi-line) -->
+        <EditText
+            android:id="@+id/input_description"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:lines="5"
+            android:maxLines="6"
+            android:scrollbars="vertical"
+            android:background="@drawable/bg_edittext_rounded"
+            android:padding="16dp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif" />
+
+        <!-- Item No. Field with + and - Buttons -->
+        <LinearLayout
+            android:id="@+id/item_no_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Minus Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_decrement"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="-"
+                android:textSize="20sp"
+                android:textColor="@color/buttonTextColor"
+                android:backgroundTint="@color/primaryColor"
+                android:elevation="6dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="0dp"
+                app:cornerRadius="24dp"
+                app:rippleColor="@color/rippleColor"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                style="@style/Widget.MaterialComponents.Button"
+                app:backgroundTintMode="src_in" />
+
+            <!-- Editable Item No Field -->
+            <EditText
+                android:id="@+id/input_item_no"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:hint="Item No."
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/textPrimary"
+                android:background="@drawable/bg_edittext_rounded"
+                android:fontFamily="sans-serif"
+                android:paddingHorizontal="16dp" />
+
+            <!-- Plus Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_increment"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                android:textSize="20sp"
+                android:textColor="@color/buttonTextColor"
+                android:backgroundTint="@color/primaryColor"
+                android:elevation="6dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="0dp"
+                app:cornerRadius="24dp"
+                app:rippleColor="@color/rippleColor"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                style="@style/Widget.MaterialComponents.Button"
+                app:backgroundTintMode="src_in" />
+
+        </LinearLayout>
+
+        <!-- Add Image Button -->
+        <Button
+            android:id="@+id/add_image_button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Add Image"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-medium"
+            android:backgroundTint="@color/primaryColor"
+            android:elevation="4dp" />
+
+        <!-- Image Carousel -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/image_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:nestedScrollingEnabled="false"
+            android:clipToPadding="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+<!--        &lt;!&ndash; Item Count Text &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/item_count_text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Items Detected: 0"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textColor="@color/textSecondary"-->
+<!--            android:layout_marginBottom="24dp"-->
+<!--            android:fontFamily="sans-serif-medium" />-->
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Submit"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:backgroundTint="@color/primaryColor"
+            android:elevation="4dp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:indeterminateTint="@color/primaryColor"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

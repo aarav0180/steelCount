@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary App Colors -->
+    <color name="primaryColor">#3F51B5</color> <!-- Indigo 500 -->
+    <color name="primaryDark">#303F9F</color> <!-- Indigo 700 -->
+    <color name="primaryLight">#C5CAE9</color> <!-- Indigo 100 -->
+
+    <!-- Accent / Secondary -->
+    <color name="accentColor">#FF4081</color> <!-- Pink A200 -->
+
+    <!-- Backgrounds -->
+    <color name="formBackground">#F0F2F5</color> <!-- Light gray -->
+    <color name="editTextBackground">#FFFFFF</color>
+    <color name="surfaceColor">#FFFFFF</color> <!-- Card / Panel Backgrounds -->
+    <color name="dividerColor">#E0E0E0</color>
+
+    <!-- Text -->
+    <color name="textPrimary">#212121</color> <!-- Almost black -->
+    <color name="textSecondary">#757575</color> <!-- Medium gray -->
+    <color name="textHint">#9E9E9E</color> <!-- Light gray for hints -->
+
+    <!-- Buttons -->
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="buttonDisabledColor">#BDBDBD</color>
+    <color name="buttonBackgroundDisabled">#E0E0E0</color>
+
+    <!-- Ripple Effects -->
+    <color name="rippleColor">#1AFFFFFF</color> <!-- 10% white ripple -->
+    <color name="ripplePrimary">#33FFFFFF</color> <!-- 20% white ripple -->
+    <color name="rippleDark">#22000000</color> <!-- 13% black ripple for light bg -->
+
+    <!-- Error / Alerts -->
+    <color name="errorColor">#D32F2F</color> <!-- Red 700 -->
+    <color name="warningColor">#FFA000</color> <!-- Amber 700 -->
+    <color name="successColor">#388E3C</color> <!-- Green 700 -->
+
+    <!-- Image Overlay or Press State -->
+    <color name="overlayLight">#33000000</color> <!-- 20% Black -->
+    <color name="overlayDark">#99FFFFFF</color> <!-- 60% White -->
+
+</resources>
+

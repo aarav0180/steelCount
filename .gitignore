@@ -1,0 +1,23 @@
+# Top-level .gitignore for Android projects
+
+*.iml
+.gradle/
+local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+# Android Studio
+*.apk
+*.ap_
+*.cxx/
+.idea/
+*.log
+*.hprof
+*.lock
+
+# Sign-in keys
+*.jks
+key.properties
