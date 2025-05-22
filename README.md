@@ -44,7 +44,7 @@ Follow these steps to build and run **Steel Count** on your machine:
    ```bash
    git clone https://github.com/yourusername/steel-count.git
    cd steel-count
-````
+   ````
 
 2. **Open in Android Studio**
 
